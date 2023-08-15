@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.dark-mode{
+    background-color: #313131;
+}
+
+.dark-mode h1{
+    color: white;
+}
+
+.container{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    min-height: 100vh;
+}
+
+.note-list{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note{
+    background-color: oldlace;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
+}
+
+.note__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note.new-note{
+    background-color: cadetblue;
+
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    color: white;
+}
+
+textarea:focus{
+    outline: none;
+    border: none;
+}
+
+textarea::placeholder{
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.note-save{
+    background-color: oldlace;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+.note-save:hover{
+    background-color: #727272;
+    cursor: pointer;
+    color: oldlace;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1.5em ;
+}
+
+.search__bar{
+    border: none;
+    background-color: transparent;
+}
+
+.search__bar:focus{
+    outline: none;
+}
+
+
+
+
